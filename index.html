@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="description" content="Healthfindr find local health services"/>
+    <title>Health Findr</title>
+    <script src="https://kit.fontawesome.com/cc2ca9adee.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="main.css"/>
+</head>
+
+<body>
+    <header>
+        <div  class="inner flex">
+        <h2><a href="#" class="logo">HealthFindr</a></h2>
+        <nav id="nav">
+            <ul>
+                <li id="nav1"><a href="#home">Home</a></li>
+                <li id="nav2"><a href="#about-us">About us</a></li>
+                <li id="nav3"><a href="#help">What you can do</a></li>
+                <li id="nav4"><a href="#register">Register interest</a></li>
+            </ul>
+        </nav>
+        <i id="bar" class="fa-solid fa-bars"></i>
+        </div>
+        
+    </header>
+
+    <script>
+        const body = document.body;
+let lastScroll = 0;
+
+window.addEventListener("scroll", () => {
+	const currentScroll = window.pageYOffset;
+	if (currentScroll <= 0) {
+		body.classList.remove("scroll-up");
+		return;
+	}
+
+	if (currentScroll > lastScroll && !body.classList.contains("scroll-down")) {
+		body.classList.remove("scroll-up");
+		body.classList.add("scroll-down");
+	} else if (
+		currentScroll < lastScroll &&
+		body.classList.contains("scroll-down")
+	) {
+		body.classList.remove("scroll-down");
+		body.classList.add("scroll-up");
+	}
+	lastScroll = currentScroll;
+})
+    </script>
+
+
+        <div id="home" class="back"></div>
+
+        <div class="mid">
+            <p>A new way to find the right health service</p>
+            <h3>Upgrading your health <br> with HealthFindr</h3>
+            <div class="btn">
+                <a class="simple" href="#about-us">Learn More</a>
+                <a class="border" href="#register">Show your interest</a>
+            </div>
+        </div>
+
+<section>
+        <div id ="about-us" class="about-us">
+            <div class="about-one">
+                <h4>What is HealthFindr</h4>
+                <h5>The start-up app to shorten wait-times <br>
+                     and help you find the right health services</h5>
+                <p>
+                    Have you ever not been able to find a GP or don't know if they're available <br> or are trying to find a private healthacre provider but <br> are unsure of how good their quality of care is? HealthFindr is the app you've been looking for.
+                </p>
+            </div>
+
+            <div class="about-two">
+                <h4>Some statistics</h4>
+                <br>
+                <h5>90% of GPs are closed</h5>
+                <p>Source=your mother</p>
+                <br>
+                <h5>100% Oscars rule</h5>
+                <p>Source=facts</p>
+            </div>
+        </div>
+</section>
+
+    <section>
+        <div class="help" id="help">
+            <div class="help-info">
+                <h3>How can I help?</h3>
+                <p>In order to make this app a reality we need your support to show that people are interested in having such an app. In addition, we would like to know what healthcare providers you would want to see available. This could be your specific GP, a health service you find difficult to find or any information you may want about health service providers which you're not able to find. </p>
+                <br>
+                <br>
+                <p>To register your support for this app, just fill in the form below showing your interest and any healthcare provider you would want to be available on the app. If you also have the time to fill out this very short survey on your experience with healthcare seervices</p>
+            </div>
+
+            <div class="help-form">
+                <div class="contact1">
+                    <div class="social">
+                        <h4>Social Media</h4>
+                        <div class="fb">
+                            <p>Facebook</p>
+                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                        </div>
+                        <div class="ig">
+                            <p>Instagram</p>
+                            <i class="fa-brands fa-instagram"></i>
+                        </div>
+                        <div class="twitter">
+                            <p>Twitter</p>
+                            <i class="fa-brands fa-twitter"></i>
+                        </div> 
+                    </div>
+                </div>
+
+                <div class="contact1">
+                    <div class="social">
+                        <h4>Social Media</h4>
+                        <div class="fb">
+                            <p>Facebook</p>
+                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                        </div>
+                        <div class="ig">
+                            <p>Instagram</p>
+                            <i class="fa-brands fa-instagram"></i>
+                        </div>
+                        <div class="twitter">
+                            <p>Twitter</p>
+                            <i class="fa-brands fa-twitter"></i>
+                        </div> 
+                    </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="register" id="register">
+            <p class="paragraph">Show us your support or tell us the helathcare provider you would like on the app</p>
+            <h3 class="h3">Register your interest here</h3>
+            </div>
+
+            <div class="form">
+                <div class="submit">
+                    <input type="text" name="" placeholder="Name">
+                    <input type="email" name="" placeholder ="Email">
+                    <textarea placeholder="Tell us your story/recommendations or who you want to see on our app" rows="25"></textarea>
+                    <a href="#">Sent Message</a>
+                </div>
+            </div>
+
+        </section>
+
+        <footer>
+            <div class="footer">
+            <p>Copyright © 2023 HealthFindr <br><br> Design: HealthFindr team</p>
+            <p><i class="fa-regular fa-envelope"></i>HealthFindr@gmail.com</p>
+            </div>
+        </footer>
+
+<script src="script.js"></script>
+
+
+</body>
+
+</html>
